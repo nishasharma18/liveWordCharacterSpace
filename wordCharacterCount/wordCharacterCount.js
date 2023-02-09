@@ -7,12 +7,9 @@ export default class WordCharacterCount extends LightningElement {
     
     handleOnChange(event){
         let inputField = event.target.value;
-        console.log('inputField: ' + inputField);
         
         // count characters  
         let content = inputField;
-        console.log('content: ' + content);
-        console.log('char count: ' + content.length);
         this.charCount = content.length;
         
         // count spaces
