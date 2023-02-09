@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Live Word, Character and Space Counter" icon-name="utility:record_alt">
+        <lightning-textarea data-target="inputField" placeholder="Enter Your Text Here..." onchange={handleOnChange}></lightning-textarea>
+            <p class="moveRight">
+            <span><b data-target="wordCount">{wordCount}</b> Words, </span>
+            <span><b data-target="charCount"> {charCount}</b> Characters and </span>
+            <span><b data-target="spaceCount"> {spaceCount}</b> Spaces </span>
+          </p>
+    </lightning-card>
+</template>
